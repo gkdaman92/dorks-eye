@@ -1,0 +1,4 @@
+# One proxy per line - rotated round-robin. Bare host:port means socks5h://host:port
+socks5h://127.0.0.1:9050
+# socks5://user:pass@203.0.113.10:1080
+# http://203.0.113.20:3128

@@ -1,0 +1,5 @@
+# One dork per line. Replace example.com with a domain you are authorised to assess.
+site:example.com ext:sql OR ext:bak OR ext:old
+site:example.com intitle:"index of"
+site:example.com inurl:admin OR inurl:login
+site:example.com ext:env OR ext:log

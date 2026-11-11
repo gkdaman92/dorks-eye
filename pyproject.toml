@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dorks-eye"
+version = "3.0.0"
+description = "Multi-engine search dork tool with SOCKS5 proxy rotation, AI operators and an MCP server"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "Jolanda de Koff (original author)" }]
+dependencies = ["ddgs>=9.10", "requests[socks]>=2.32", "beautifulsoup4>=4.12"]
+
+[project.optional-dependencies]
+ai = ["anthropic>=2.0", "openai>=1.50", "socksio"]
+mcp = ["mcp>=1.10"]
+all = ["anthropic>=2.0", "openai>=1.50", "socksio", "mcp>=1.10"]
+dev = ["pytest"]
+
+[project.scripts]
+dorks-eye = "dorkseye.cli:main"
+
+[tool.setuptools]
+packages = ["dorkseye", "dorkseye.ai"]

@@ -1,4 +1,10 @@
-duckduckgo-search
-googlesearch-python
-requests
-beautifulsoup4
+ddgs>=9.10
+requests[socks]>=2.32
+beautifulsoup4>=4.12
+# AI operators (optional): Claude + any OpenAI-compatible endpoint (Ollama, LM Studio, OpenRouter, Groq, ...)
+anthropic>=2.0
+openai>=1.50
+httpx[socks]
+socksio
+# MCP server (optional): let any MCP client drive Dorks Eye
+mcp>=1.10
